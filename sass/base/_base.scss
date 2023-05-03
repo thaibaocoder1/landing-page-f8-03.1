@@ -13,3 +13,8 @@ body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+.main-content {
+  width: 1140px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}

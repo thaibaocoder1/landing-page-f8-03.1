@@ -1,0 +1,25 @@
+.btn {
+  height: 57px;
+  line-height: 57px;
+  display: inline-block;
+  background-color: $number-btn-color;
+  border: 1.5px solid $number-btn-color;
+  border-radius: 4rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0 16px;
+  transition: all 0.3s linear;
+  font-weight: 500;
+  &:hover {
+    background-color: #fff;
+    color: $number-btn-color;
+  }
+  &--header {
+    min-width: 17.3rem;
+  }
+  &--media {
+    min-width: 17.3rem;
+    flex-shrink: 0;
+  }
+}

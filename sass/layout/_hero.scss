@@ -1,0 +1,71 @@
+.hero {
+  padding: 6rem 0;
+  font-family: $second-font;
+  &-body {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-content {
+    width: 35%;
+    flex-basis: 35%;
+    &__heading {
+      font-weight: 800;
+      font-size: 5rem;
+      line-height: 1.4;
+      color: $number-btn-color;
+      max-width: 368px;
+    }
+    &__desc {
+      margin: 2rem 0 4.2rem;
+      font-weight: 500;
+      font-size: $default-font;
+      line-height: 1.56;
+      color: $title-color;
+    }
+  }
+  &-composition {
+    width: 65%;
+    flex-basis: 65%;
+    display: flex;
+    gap: 0 2rem;
+    &__item {
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      border-radius: 11rem;
+      cursor: pointer;
+      flex: 1;
+    }
+    &__item:nth-child(2) {
+      margin-top: 7.7rem;
+    }
+  }
+  &-media {
+    display: flex;
+    align-items: center;
+  }
+  &-play {
+    margin-left: 3.6rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: $media-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &-play__icon {
+    color: #fef6fb;
+    border-radius: 1px;
+  }
+  &-play__text {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: $default-font;
+    line-height: 1.67;
+    color: #152427;
+    padding-left: 9px;
+  }
+}
