@@ -31,6 +31,15 @@ a {
   text-decoration: none;
 }
 
+@keyframes showTagLink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .btn {
   height: 57px;
   line-height: 57px;
@@ -645,6 +654,10 @@ a {
 .process-item:hover::before {
   width: 0%;
 }
+.process-item:hover .process-box a {
+  display: block;
+  animation: showTagLink 0.25s linear forwards 1;
+}
 .process-item__number {
   display: flex;
   align-items: center;
@@ -671,7 +684,9 @@ a {
   font-weight: 400;
   font-size: 1.8rem;
   color: #7d8188;
-  display: block;
+  display: none;
+  transform: scale(0);
+  transition: all 0.25s linear;
   padding-top: 2.2rem;
 }
 .process-box a:hover {
