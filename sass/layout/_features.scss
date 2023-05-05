@@ -2,14 +2,42 @@
   margin-top: 14.8rem;
   padding: 5.6rem 0 6.3rem 0;
   background-color: $number-btn-color;
+  position: relative;
+  &-line {
+    & img:first-child {
+      position: absolute;
+      right: 18%;
+      top: 11rem;
+      z-index: 20;
+    }
+    & img:last-child {
+      position: absolute;
+      right: 18%;
+      top: 22%;
+      z-index: 10;
+    }
+  }
   &-top {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     padding-top: 6rem;
   }
   .section-title &__heading {
     margin-top: 0;
+    margin-right: 9.3rem;
+    max-width: 45.7rem;
     color: #e7f9f9;
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      display: inline-block;
+      background-color: $media-color;
+      position: absolute;
+      right: 0;
+      bottom: 2rem;
+      transform: translateX(-150%);
+    }
   }
   &-view__desc {
     font-family: $second-font;
@@ -19,7 +47,7 @@
     color: #6a8383;
     max-width: 59rem;
     display: inline-block;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.3rem;
   }
   &-box {
     svg {
@@ -57,12 +85,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: all 0.3s ease;
     cursor: pointer;
     svg {
       width: 3.6rem;
       height: 3.6rem;
       color: #fff;
+      transition: all 0.3s ease;
       border-radius: 1px;
+    }
+    &:hover {
+      background-color: #80a07b;
+      svg {
+        transform: scale(1.1);
+      }
     }
   }
 }

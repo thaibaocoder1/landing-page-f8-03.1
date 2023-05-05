@@ -27,15 +27,5 @@
     max-width: 52rem;
     margin-top: 1.2rem;
     position: relative;
-    &::before {
-      content: "";
-      width: 66px;
-      height: 2px;
-      background-color: $heading-color;
-      position: absolute;
-      right: 5%;
-      bottom: 22%;
-      transform: translateX(-100%);
-    }
   }
 }

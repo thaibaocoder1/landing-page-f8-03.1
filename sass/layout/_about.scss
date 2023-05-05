@@ -1,9 +1,9 @@
 .about {
-  margin-top: 5.2rem;
-  padding: 5.2rem 0;
+  padding: 10.4rem 0 5.2rem;
   &-container {
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
   &-images {
     width: 52%;
@@ -140,8 +140,10 @@
   &-content {
     padding-left: 6.2rem;
   }
-  &-content__heading {
+  .section-title &__heading {
+    margin-top: 2rem;
     margin-bottom: 1.1rem;
+    max-width: 48.3rem;
   }
   &-content__desc {
     font-weight: 500;
@@ -173,5 +175,20 @@
     font-size: 1.4rem;
     line-height: 1.71;
     color: $gray-color;
+  }
+  &-line {
+    & img:first-child {
+      position: absolute;
+      left: 10%;
+      top: 4%;
+      transform: rotate(12.64deg);
+      z-index: 20;
+    }
+    & img:nth-child(2) {
+      position: absolute;
+      left: 9%;
+      top: -6%;
+      transform: rotate(174.99deg);
+    }
   }
 }

@@ -101,7 +101,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header fixed">
       <div class="main-content">
         <div class="header-top">
           <figure class="header-images">
@@ -116,16 +116,16 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Home</a>
+                <a href="#home" class="navbar__link">Home</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">About</a>
+                <a href="#blog" class="navbar__link">Blog</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Blog</a>
+                <a href="#about" class="navbar__link">About</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Contact</a>
+                <a href="#contact" class="navbar__link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -135,7 +135,7 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="main-content">
           <div class="hero-body">
             <div class="hero-content">
@@ -165,6 +165,12 @@
                 </div>
                 <span class="hero-play__text">Watch video</span>
               </div>
+              <div class="hero-line">
+                <img src="./assets/images/hero-line.svg" alt="" />
+                <img src="./assets/images/circle-svg.svg" alt="" />
+                <img src="./assets/images/hero-line-2.svg" alt="" />
+                <img src="./assets/images/circle-svg.svg" alt="" />
+              </div>
             </div>
             <div class="hero-composition">
               <div class="hero-composition__item">
@@ -193,7 +199,7 @@
         </div>
       </section>
       <!-- Logo -->
-      <section class="logo">
+      <section class="logo" id="">
         <div class="main-content">
           <section class="logo-wrapper">
             <img
@@ -205,12 +211,12 @@
         </div>
       </section>
       <!-- Service -->
-      <section class="service">
+      <section class="service" id="blog">
         <div class="main-content">
           <div class="service-top">
             <div class="section-title">
-              <p class="section-desc">Our servicess</p>
-              <h2 class="section-heading">
+              <p class="service__desc section-desc">Our servicess</p>
+              <h2 class="service__heading section-heading">
                 We offer a wide range of design services
               </h2>
             </div>
@@ -309,7 +315,7 @@
         </div>
       </section>
       <!-- About -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="main-content">
           <div class="about-container">
             <figure class="about-images">
@@ -366,11 +372,15 @@
                   </ul>
                 </div>
               </div>
+              <div class="about-line">
+                <img src="./assets/images/hero-line.svg" alt="" />
+                <img src="./assets/images/circle-svg.svg" alt="" />
+              </div>
             </figure>
             <div class="about-content">
               <div class="section-title">
-                <p class="about-content__title section-desc">About us</p>
-                <h2 class="about-content__heading section-heading">
+                <p class="about__desc section-desc">About us</p>
+                <h2 class="about__heading section-heading">
                   We are an extention of your creative team
                 </h2>
                 <p class="about-content__desc">
@@ -519,6 +529,10 @@
               </svg>
             </div>
           </div>
+          <div class="features-line">
+            <img src="./assets/images/feature-line.svg" alt="" />
+            <img src="./assets/images/circle-svg.svg" alt="" />
+          </div>
         </div>
       </section>
       <!-- Testimonial -->
@@ -645,7 +659,7 @@
         </div>
       </section>
       <!-- Footer -->
-      <section class="footer">
+      <section class="footer" id="contact">
         <div class="main-content">
           <div class="footer-row">
             <div class="footer-column">
@@ -656,6 +670,8 @@
                   name="email"
                   class="footer-form__input"
                   placeholder="Enter your email"
+                  autocomplete="off"
+                  required
                 />
                 <button type="submit" class="footer-form__btn">
                   <svg
@@ -677,17 +693,17 @@
               </form>
               <ul class="footer-social">
                 <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
+                  <a href="#facebook" class="footer-social__link">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
                 <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
+                  <a href="#instagram" class="footer-social__link">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li class="footer-social__item">
-                  <a href="#" class="footer-social__link">
+                  <a href="#twitter" class="footer-social__link">
                     <i class="fa-brands fa-twitter"></i>
                   </a>
                 </li>

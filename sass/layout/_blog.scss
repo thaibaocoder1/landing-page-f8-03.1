@@ -4,7 +4,21 @@
   background-color: #efefef;
   &-top {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+  }
+  .section-title &__heading {
+    margin-top: 1rem;
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      display: inline-block;
+      background-color: $heading-color;
+      position: absolute;
+      right: 0;
+      bottom: 1.8rem;
+      transform: translateX(50%);
+    }
   }
   &__more {
     margin-left: auto;
@@ -13,6 +27,9 @@
     font-size: $default-font;
     line-height: 1.62;
     color: $gray-color;
+    align-self: center;
+    position: relative;
+    top: 18px;
   }
   &-body {
     margin-top: 9rem;
@@ -27,7 +44,7 @@
     &:hover .blog-content {
       background-color: #fff;
       border-radius: 0 0 4rem 4rem;
-      padding: 2.6rem 3rem 1.8rem 3.3rem;
+      margin-left: 0;
     }
     &:hover .blog-content__btn {
       background-color: $number-btn-color;
@@ -47,7 +64,8 @@
   }
   &-content {
     transition: all 0.3s ease;
-    padding-top: 2.6rem;
+    padding: 2.6rem 1.8rem 1.8rem 3.3rem;
+    margin-left: -3.3rem;
   }
   &-content__btn {
     min-width: 107px;
@@ -66,7 +84,7 @@
   }
   &-content__desc {
     font-weight: 600;
-    font-size: $default-font;
+    font-size: 1.6rem;
     line-height: 1.67;
     color: $number-btn-color;
     max-width: 34.6rem;

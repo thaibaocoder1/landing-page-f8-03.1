@@ -1,6 +1,5 @@
 .service {
-  margin-top: 5.3rem;
-  padding: 5.3rem 0;
+  padding: 10.6rem 0 5.6rem;
   background-color: #efefef;
   &-top {
     display: flex;
@@ -101,6 +100,19 @@
     &:hover .service-card__content {
       background-color: #fff;
       margin-left: 0;
+    }
+  }
+  .section-title &__heading {
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      display: inline-block;
+      background-color: $heading-color;
+      position: absolute;
+      right: 5%;
+      bottom: 1.9rem;
+      transform: translateX(-100%);
     }
   }
 }

@@ -1,5 +1,11 @@
 .header {
   font-family: $second-font;
+  &.fixed {
+    position: sticky;
+    top: -4px;
+    z-index: 100;
+    background-color: $bg-color;
+  }
   &-top {
     display: flex;
     align-items: center;

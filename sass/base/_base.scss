@@ -6,12 +6,16 @@
   box-sizing: inherit;
 }
 html {
+  scroll-behavior: smooth;
+}
+html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  background-color: $bg-color;
 }
 .main-content {
   width: 1140px;
