@@ -30,8 +30,11 @@
     }
   }
   .navbar {
+    display: flex;
+    align-items: center;
     &__list {
       display: flex;
+      margin-right: 8.8rem;
     }
     &__item {
       display: inline-block;

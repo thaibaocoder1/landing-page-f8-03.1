@@ -114,8 +114,13 @@ a {
   left: 0;
   z-index: 1;
 }
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
 .header .navbar__list {
   display: flex;
+  margin-right: 8.8rem;
 }
 .header .navbar__item {
   display: inline-block;
