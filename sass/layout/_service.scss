@@ -1,0 +1,106 @@
+.service {
+  margin-top: 5.3rem;
+  padding: 5.3rem 0;
+  background-color: #efefef;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-view {
+    position: relative;
+    top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.7rem;
+  }
+  &-view__box {
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    background: #e2eddf;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $heading-color;
+    transition: all 0.3s linear;
+    &:first-child {
+      transform: rotate(360deg);
+    }
+    &:hover {
+      background-color: #143c3c;
+      color: #fff;
+    }
+  }
+  &-body {
+    margin-top: 7.6rem;
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 1.6rem;
+  }
+  &-card__images {
+    width: 100%;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #e2eddf50;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0) rotate(180deg);
+      transition: all 0.25s linear;
+    }
+    &:hover::before {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+  &-card__image {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+  }
+  &-card__content {
+    transition: all 0.3s linear;
+    padding-top: 2.4rem;
+    border-radius: 0 0 2rem 2rem;
+    padding: 2.4rem 0 2.3rem 1.8rem;
+    margin-left: -1.8rem;
+    overflow: hidden;
+  }
+  &-card__content-heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: $heading-color;
+    margin-bottom: 1.8rem;
+  }
+  &-card__content-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: $gray-color;
+    max-width: 26.8rem;
+  }
+  &-card {
+    border-radius: 2rem;
+    transition: all 0.3s linear;
+    &:hover .service-card__content {
+      background-color: #fff;
+      margin-left: 0;
+    }
+  }
+}

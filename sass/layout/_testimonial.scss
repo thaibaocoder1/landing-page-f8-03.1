@@ -1,0 +1,68 @@
+.testimonial {
+  margin-top: 7rem;
+  padding: 7rem 0;
+  background-color: #efefef;
+  &-top {
+    text-align: center;
+  }
+  &__heading {
+    font-weight: 600;
+    font-size: 4.2rem;
+    line-height: 1.24;
+    color: $heading-color;
+    max-width: 52rem;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: $gray-color;
+    max-width: 54.7rem;
+    margin: auto;
+  }
+  &-body {
+    margin-top: 103px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 4.5rem;
+  }
+  &-item__link {
+    display: block;
+  }
+  &-item {
+    padding: 7.9rem 2.7rem;
+    border: 1px solid #efefef;
+    text-align: center;
+    border-radius: 16rem;
+    transition: all 0.3s linear;
+    &:nth-child(2) {
+      position: relative;
+      top: -5.9rem;
+    }
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 36px 100px rgba(111, 120, 111, 0.2);
+    }
+  }
+  &-item__title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: $heading-color;
+    margin: 2.6rem 0 0.9rem 0;
+  }
+  &-item__desc {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: $gray-color;
+    max-width: 28.6rem;
+    &:not(:first-child) {
+      max-width: 26.4rem;
+      margin: auto;
+    }
+  }
+}

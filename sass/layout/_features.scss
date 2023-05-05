@@ -1,0 +1,68 @@
+.features {
+  margin-top: 14.8rem;
+  padding: 5.6rem 0 6.3rem 0;
+  background-color: $number-btn-color;
+  &-top {
+    display: flex;
+    align-items: stretch;
+    padding-top: 6rem;
+  }
+  .section-title &__heading {
+    margin-top: 0;
+    color: #e7f9f9;
+  }
+  &-view__desc {
+    font-family: $second-font;
+    font-weight: 500;
+    font-size: $default-font;
+    line-height: 1.56;
+    color: #6a8383;
+    max-width: 59rem;
+    display: inline-block;
+    margin-bottom: 2.2rem;
+  }
+  &-box {
+    svg {
+      color: #80a07b;
+    }
+  }
+  &-box__link {
+    font-family: $second-font;
+    font-weight: 500;
+    font-size: $default-font;
+    line-height: 1.56;
+    color: #fff;
+    display: inline-block;
+    padding-right: 2.6rem;
+  }
+  &-media {
+    margin-top: 6.5rem;
+    position: relative;
+  }
+  &-media__img {
+    width: 100%;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 2.2rem;
+  }
+  &-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(#000, 0.7);
+    width: 11.8rem;
+    height: 11.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    svg {
+      width: 3.6rem;
+      height: 3.6rem;
+      color: #fff;
+      border-radius: 1px;
+    }
+  }
+}

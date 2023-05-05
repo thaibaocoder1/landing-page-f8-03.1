@@ -1,0 +1,41 @@
+.section-title {
+  .section-desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: $heading-color;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 4.6rem;
+    &::before {
+      content: "";
+      width: 25px;
+      height: 1px;
+      background-color: $heading-color;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+  .section-heading {
+    font-weight: 600;
+    font-size: 4.2rem;
+    line-height: 1.24;
+    color: $heading-color;
+    max-width: 52rem;
+    margin-top: 1.2rem;
+    position: relative;
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      background-color: $heading-color;
+      position: absolute;
+      right: 5%;
+      bottom: 22%;
+      transform: translateX(-100%);
+    }
+  }
+}

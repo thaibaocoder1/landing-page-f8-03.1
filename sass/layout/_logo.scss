@@ -1,0 +1,15 @@
+.logo {
+  margin-top: 5.5rem;
+  padding-top: 5.8rem;
+  &-wrapper {
+    background-color: #e2eddf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7.7rem 12.2rem;
+    border-radius: 100.5px;
+    &__img {
+      cursor: pointer;
+    }
+  }
+}
