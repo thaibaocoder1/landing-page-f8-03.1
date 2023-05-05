@@ -657,6 +657,7 @@ a {
   font-size: 7.2rem;
   line-height: 1;
   color: #143c3c;
+  min-width: 10.7rem;
 }
 .process-box {
   transition: all 0.25s linear;
