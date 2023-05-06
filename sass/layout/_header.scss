@@ -2,7 +2,7 @@
   font-family: $second-font;
   &.fixed {
     position: sticky;
-    top: -4px;
+    top: -1.5rem;
     z-index: 100;
     background-color: $bg-color;
   }
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 2.6rem;
+    padding-bottom: 1.3rem;
     padding-top: 2.8rem;
     position: relative;
     &::before {
@@ -57,7 +57,7 @@
         background-color: $number-btn-color;
         position: absolute;
         left: 0%;
-        bottom: calc(-100% + 1px);
+        bottom: calc(-50% - 4px);
         transform: translateX(100%);
         transition: all 0.3s linear;
       }
@@ -67,6 +67,88 @@
       }
       &:hover::after {
         width: 16px;
+      }
+    }
+  }
+  &-toggle-bar {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 8px;
+    display: none;
+  }
+  &-toggle-bar__icon {
+    font-size: 2rem;
+  }
+  // RESPONSIVE FOR TABLET AND MOBILE
+  @include maxWidth(1023.98px) {
+    .navbar {
+      &__list {
+        margin-right: 0;
+      }
+    }
+    .btn--header {
+      margin-left: 2rem;
+    }
+  }
+  @include maxWidth(767.98px) {
+    &-images {
+      width: 12rem;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .btn {
+      min-width: 9.2rem;
+      height: 3.2rem;
+      line-height: 3.2rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    &-toggle-bar {
+      display: block;
+      margin-left: 3rem;
+      line-height: 3.5rem;
+    }
+    .navbar {
+      margin-left: auto;
+      &__list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #fff;
+        width: 20rem;
+        height: 100vh;
+        display: block;
+        padding: 1.5rem;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+        &.is-actived {
+          transform: translateX(0%);
+        }
+      }
+      &__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      &__link {
+        width: 100%;
+        display: block;
+        border-radius: 6px;
+        &:hover {
+          color: #fff;
+          background-color: $media-color;
+        }
+        &::after {
+          display: none;
+        }
       }
     }
   }

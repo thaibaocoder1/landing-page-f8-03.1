@@ -72,19 +72,16 @@
     justify-content: center;
     cursor: pointer;
     position: relative;
-    box-shadow: 0 0 0 6px $bg-color;
-    &::before {
-      content: "";
-      width: 59px;
-      height: 59px;
-      border: 3rem solid $heading-color;
-      border-right: 3rem solid transparent;
-      border-top: 3rem solid transparent;
-      transform: rotate(45deg);
-      border-radius: 50%;
-      position: absolute;
-      z-index: -1;
-    }
+    flex-shrink: 0;
+  }
+  &-wrapper {
+    width: 59px;
+    height: 59px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid $heading-color;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    position: absolute;
   }
   &-play__icon {
     color: #fef6fb;
@@ -125,6 +122,41 @@
       bottom: -16%;
       z-index: 10;
       transform: rotate(-2deg);
+    }
+  }
+  @include maxWidth(1023.98px) {
+    &-content {
+      width: 50%;
+    }
+    &-composition__img {
+      width: 12rem;
+    }
+  }
+  @include maxWidth(767.98px) {
+    padding: 5.5rem 0;
+    &-body {
+      flex-direction: column;
+    }
+    &-content {
+      width: 100%;
+    }
+    &-content__heading {
+      width: 100%;
+      max-width: unset;
+    }
+    &-content__desc {
+      margin: 1rem 0 1.9rem;
+    }
+    &-composition {
+      width: 50%;
+      margin: 6.4rem auto 0;
+    }
+    &-composition__img {
+      width: 85.35px;
+      height: 196.9px;
+    }
+    &-line {
+      display: none;
     }
   }
 }

@@ -1,0 +1,22 @@
+@mixin minWidth($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin maxWidth($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin bothWidth($bpminWidth, $bpmaxWidth) {
+  @media screen and (min-width: $bpminWidth) and (max-width: $bpmaxWidth) {
+    @content;
+  }
+}
+@mixin hideScroll() {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

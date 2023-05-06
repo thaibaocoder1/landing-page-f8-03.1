@@ -12,4 +12,19 @@
       cursor: pointer;
     }
   }
+  @include maxWidth(1023.98px) {
+    &-wrapper {
+      &__img {
+        width: 130%;
+      }
+    }
+  }
+  @include maxWidth(767.98px) {
+    margin-top: 46.5px;
+    &-wrapper {
+      &__img {
+        width: 60rem;
+      }
+    }
+  }
 }

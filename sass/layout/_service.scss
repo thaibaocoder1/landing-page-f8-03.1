@@ -41,6 +41,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 1.6rem;
   }
+  &-card {
+    cursor: pointer;
+  }
   &-card__images {
     width: 100%;
     position: relative;
@@ -58,6 +61,7 @@
       visibility: hidden;
       transform: scale(0) rotate(180deg);
       transition: all 0.25s linear;
+      cursor: pointer;
     }
     &:hover::before {
       opacity: 1;
@@ -113,6 +117,29 @@
       right: 5%;
       bottom: 1.9rem;
       transform: translateX(-100%);
+    }
+  }
+  @include maxWidth(1023.98px) {
+    &-top {
+      display: block;
+    }
+    &-view {
+      display: none;
+    }
+    &-card__image {
+      width: 100%;
+    }
+    &-cards {
+      grid-auto-flow: column;
+      grid-auto-columns: 60%;
+      grid-template-columns: unset;
+      overflow: auto;
+      @include hideScroll;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+    }
+    &-card {
+      scroll-snap-align: start;
     }
   }
 }

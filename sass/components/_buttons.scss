@@ -12,7 +12,8 @@
   transition: all 0.3s linear;
   font-weight: 500;
   &:hover {
-    background-color: #fff;
+    background-color: #e2eddf;
+    border-color: #e2eddf;
     color: $number-btn-color;
   }
   &--header {

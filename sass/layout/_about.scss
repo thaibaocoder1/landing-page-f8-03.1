@@ -191,4 +191,25 @@
       transform: rotate(174.99deg);
     }
   }
+  @include maxWidth(767.98px) {
+    padding: 0;
+    &-container {
+      flex-direction: column;
+    }
+    &-images {
+      margin: auto;
+    }
+    &-images__img {
+      width: 152.33px;
+      height: 257.46px;
+      object-fit: cover;
+    }
+    &-info {
+      bottom: -35px;
+      right: 52px;
+    }
+    &-line {
+      display: none;
+    }
+  }
 }

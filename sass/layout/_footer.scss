@@ -53,10 +53,13 @@
     font-family: inherit;
     padding-bottom: 1.8rem;
     border-bottom: 1px solid #6a8383;
+    padding-right: 2rem;
     font-weight: 600;
     font-size: 2.2rem;
     color: #6a8383;
-    padding-right: 2rem;
+  }
+  &-form__input::placeholder {
+    color: #6a8383;
   }
   &-form__btn {
     flex-shrink: 0;

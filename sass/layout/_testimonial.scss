@@ -39,13 +39,12 @@
     text-align: center;
     border-radius: 16rem;
     transition: all 0.3s linear;
-    &:nth-child(2) {
-      position: relative;
-      top: -5.9rem;
-    }
+    border: 1.5px solid #cecece;
     &:hover {
       background-color: #fff;
       box-shadow: 0px 36px 100px rgba(111, 120, 111, 0.2);
+      transform: translateY(-5.9rem);
+      border-color: transparent;
     }
   }
   &-item__title {
